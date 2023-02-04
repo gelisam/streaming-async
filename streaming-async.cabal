@@ -1,0 +1,10 @@
+cabal-version:      2.4
+name:               streaming-async
+version:            0.1.0.0
+
+benchmark streaming-async-bench
+  main-is:          bench.hs
+  type:             exitcode-stdio-1.0
+  build-depends:    base
+                  , criterion
+  ghc-options: -W -Wall -threaded -with-rtsopts=-N
