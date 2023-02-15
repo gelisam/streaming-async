@@ -7,6 +7,10 @@ library
   exposed-modules:  Streaming.Async
   ghc-options: -W -Wall
   build-depends:    base
+                  , async
+                  , stm
+                  , stm-chans
+                  , streaming
 
 benchmark streaming-async-bench
   main-is:          bench.hs
