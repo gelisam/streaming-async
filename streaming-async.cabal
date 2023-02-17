@@ -16,6 +16,9 @@ benchmark streaming-async-bench
   main-is:          bench.hs
   type:             exitcode-stdio-1.0
   build-depends:    base
+                  , async
                   , criterion
+                  , stm
+                  , streaming
                   , streaming-async
   ghc-options: -W -Wall -threaded -with-rtsopts=-N
